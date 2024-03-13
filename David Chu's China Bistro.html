@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David Chu's China Bistro</title>
-    <link rel="icon" href="https://www.davidchuschinabistro.com/images/restaurant-logo-favicon.png" type="image/png" sizes="16x16">
-    <link href="./David Chu&#39;s China Bistro_files/css" rel="stylesheet" type="text/css">
-    <link href="./David Chu&#39;s China Bistro_files/css(1)" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./David Chu&#39;s China Bistro_files/bootstrap.min.css">
-    <link rel="stylesheet" href="./David Chu&#39;s China Bistro_files/restaurant.css">
-    <link rel="stylesheet" href="./David Chu&#39;s China Bistro_files/common.css">
+    <link rel="restaurant-logo-favicon.png" type="image/png" sizes="16x16">
+    <link href="css" rel="stylesheet" type="text/css">
+    <link href="css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="common.css">
   </head>
   <header>
       <nav id="header-nav" class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
-            <a href="https://www.davidchuschinabistro.com/index.html" class="pull-left visible-md visible-lg">
+            <a href="index.html" class="pull-left visible-md visible-lg">
               <div id="logo-img" alt="Logo image"></div>
             </a>
 
             <div class="navbar-brand">
-              <a href="https://www.davidchuschinabistro.com/index.html"><h1>David Chu's China Bistro</h1></a>
+              <a href="index.html"><h1>David Chu's China Bistro</h1></a>
               <p>
-              <img src="./David Chu&#39;s China Bistro_files/star-k-logo.png" alt="Kosher certification">
+              <img src="star-k-logo.png" alt="Kosher certification">
               <span>Kosher Certified</span>
               </p>
             </div>
@@ -39,19 +39,19 @@
           <div id="collapsable-nav" class="collapse navbar-collapse">
             <ul id="nav-list" class="nav navbar-nav navbar-right">
               <li id="navHomeButton" class="visible-xs">
-                <a href="https://www.davidchuschinabistro.com/index.html">
+                <a href="index.html">
                   <span class="glyphicon glyphicon-home"></span> Home</a>
               </li>
               <li id="navMenuButton" ui-sref-active="active" class="active">
-                <a ui-sref="public.menu" href="https://www.davidchuschinabistro.com/#/menu">
+                <a ui-sref="public.menu" href="#menu">
                   <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
               </li>
               <li>
-                <a ui-sref="public.about" href="https://www.davidchuschinabistro.com/#/about">
+                <a ui-sref="public.about" href="#about">
                   <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
               </li>
               <li>
-                <a ui-sref="public.awards" href="https://www.davidchuschinabistro.com/#/awards">
+                <a ui-sref="public.awards" href="#awards">
                   <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
               </li>
               <li id="phone" class="hidden-xs">
@@ -80,7 +80,7 @@
     <!-- uiView: --><ui-view class="ng-scope"><!--
   Include stylesheet specific to the public site
 -->
-<link rel="stylesheet" href="./David Chu&#39;s China Bistro_files/public.css" class="ng-scope">
+<link rel="stylesheet" href="public.css" class="ng-scope">
 
 <!-- uiView: --><ui-view class="ng-scope"><div class="container ng-scope">
   <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
@@ -89,25 +89,25 @@
   </div>
 
   <!-- ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/L">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="/#/menu/L">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/L/L.jpg" alt="Lunch" src="./David Chu&#39;s China Bistro_files/L.jpg">
+      <img width="200" height="200" ng-src="L.jpg" alt="Lunch" src="L.jpg">
       <span class="ng-binding">Lunch</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/A">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="A.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/A/A.jpg" alt="Soup" src="./David Chu&#39;s China Bistro_files/A.jpg">
+      <img width="200" height="200" ng-src="A.jpg" alt="Soup" src="A.jpg">
       <span class="ng-binding">Soup</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/B">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="B.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/B/B.jpg" alt="Appetizers" src="./David Chu&#39;s China Bistro_files/B.jpg">
+      <img width="200" height="200" ng-src="B.jpg" alt="Appetizers" src="./David Chu&#39;s China Bistro_files/B.jpg">
       <span class="ng-binding">Appetizers</span>
     </div>
   </a>
@@ -115,135 +115,135 @@
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
   <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/SP">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/SP/SP.jpg" alt="Chef&#39;s Recommendations" src="./David Chu&#39;s China Bistro_files/SP.jpg">
+      <img width="200" height="200" ng-src="SP.jpg" alt="Chef&#39;s Recommendations" src="SP.jpg">
       <span class="ng-binding">Chef's Recommendations</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/C">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="C.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/C/C.jpg" alt="Chicken" src="./David Chu&#39;s China Bistro_files/C.jpg">
+      <img width="200" height="200" ng-src="C.jpg" alt="C.jpg">
       <span class="ng-binding">Chicken</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/F">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="F.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/F/F.jpg" alt="Beef" src="./David Chu&#39;s China Bistro_files/F.jpg">
+      <img width="200" height="200" ng-src="F.jpg" alt="Beef" src="F.jpg">
       <span class="ng-binding">Beef</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/V">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="V.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/V/V.jpg" alt="Veal" src="./David Chu&#39;s China Bistro_files/V.jpg">
+      <img width="200" height="200" ng-src="V.jpg" alt="Veal" src="V.jpg">
       <span class="ng-binding">Veal</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/DK">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="DK.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/DK/DK.jpg" alt="Duck" src="./David Chu&#39;s China Bistro_files/DK.jpg">
+      <img width="200" height="200" ng-src="DK.jpg" alt="Duck" src="DK.jpg">
       <span class="ng-binding">Duck</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/VG">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="VG.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/VG/VG.jpg" alt="Vegetables" src="./David Chu&#39;s China Bistro_files/VG.jpg">
+      <img width="200" height="200" ng-src="VG.jpg" alt="Vegetables" src=VG.jpg">
       <span class="ng-binding">Vegetables</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/CU">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="CU.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/CU/CU.jpg" alt="Curry" src="./David Chu&#39;s China Bistro_files/CU.jpg">
+      <img width="200" height="200" ng-src="CU.jpg" alt="Curry" src="CU.jpg">
       <span class="ng-binding">Curry</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/NL">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="NL.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/NL/NL.jpg" alt="Noodles (Lo Mein)" src="./David Chu&#39;s China Bistro_files/NL.jpg">
+      <img width="200" height="200" ng-src="NL.jpg" alt="Noodles (Lo Mein)" src="NL.jpg">
       <span class="ng-binding">Noodles (Lo Mein)</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/NF">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="NF.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/NF/NF.jpg" alt="Mei Fan (Very Fine Noodles)" src="./David Chu&#39;s China Bistro_files/NF.jpg">
+      <img width="200" height="200" ng-src="NF.jpg" alt="Mei Fan (Very Fine Noodles)" src="NF.jpg">
       <span class="ng-binding">Mei Fan (Very Fine Noodles)</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/PF">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="PF.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/PF/PF.jpg" alt="Pan Fried Noodles" src="./David Chu&#39;s China Bistro_files/PF.jpg">
+      <img width="200" height="200" ng-src="PF.jpg" alt="Pan Fried Noodles" src="PF.jpg">
       <span class="ng-binding">Pan Fried Noodles</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/FR">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="FR,jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/FR/FR.jpg" alt="Fried Rice" src="./David Chu&#39;s China Bistro_files/FR.jpg">
+      <img width="200" height="200" ng-src="FR.jpg" alt="Fried Rice" src="FR.jpg">
       <span class="ng-binding">Fried Rice</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/CM">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="CM,jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/CM/CM.jpg" alt="Chow Mein" src="./David Chu&#39;s China Bistro_files/CM.jpg">
+      <img width="200" height="200" ng-src="CM.jpg" alt="Chow Mein" src="CM.jpg">
       <span class="ng-binding">Chow Mein</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/FY">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="FY.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/FY/FY.jpg" alt="Egg Foo Young" src="./David Chu&#39;s China Bistro_files/FY.jpg">
+      <img width="200" height="200" ng-src="FY.jpg" alt="Egg Foo Young" src="FY.jpg">
       <span class="ng-binding">Egg Foo Young</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/SO">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="SO.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/SO/SO.jpg" alt="Side Orders" src="./David Chu&#39;s China Bistro_files/SO.jpg">
+      <img width="200" height="200" ng-src="SO.jpg" alt="Side Orders" src="SO.jpg">
       <span class="ng-binding">Side Orders</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/DS">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="DS,jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/DS/DS.jpg" alt="Desserts" src="./David Chu&#39;s China Bistro_files/DS.jpg">
+      <img width="200" height="200" ng-src="DS.jpg" alt="Desserts" src="DS.jpg">
       <span class="ng-binding">Desserts</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/D">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="D.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/D/D.jpg" alt="Dinner Combo" src="./David Chu&#39;s China Bistro_files/D.jpg">
+      <img width="200" height="200" ng-src="D.jpg" alt="Dinner Combo" src="D.jpg">
       <span class="ng-binding">Dinner Combo</span>
     </div>
   </a>
 </div>
 </menu-category><!-- end ngRepeat: menuCategory in menuCtrl.menuCategories --><menu-category ng-repeat="menuCategory in menuCtrl.menuCategories" category="menuCategory" class="ng-scope ng-isolate-scope"><div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="https://www.davidchuschinabistro.com/#/menu/SR">
+  <a ui-sref="public.menuitems({category: $ctrl.category.short_name})" href="SR.jpg">
     <div class="category-tile">
-      <img width="200" height="200" ng-src="images/menu/SR/SR.jpg" alt="Sushi Menu" src="./David Chu&#39;s China Bistro_files/SR.jpg">
+      <img width="200" height="200" ng-src="SR.jpg" alt="Sushi Menu" src="SR.jpg">
       <span class="ng-binding">Sushi Menu</span>
     </div>
   </a>
@@ -278,48 +278,48 @@
         </div>
         <div class="text-center">
           © Copyright David Chu's China Bistro 2016 |
-          <a ui-sref="admin.auth" href="https://www.davidchuschinabistro.com/#/admin">Admin</a></div>
+          <a ui-sref="admin.auth" href="#admin">Admin</a></div>
       </div>
     </footer>
 
     <!-- Libs -->
-    <script src="./David Chu&#39;s China Bistro_files/jquery-2.1.4.min.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/bootstrap.min.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/angular.min.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/angular-ui-router.min.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/ng-file-upload-shim.min.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/ng-file-upload.min.js.télécharger"></script>
+    <script src="jquery-2.1.4.min.js.télécharger"></script>
+    <script src="bootstrap.min.js.télécharger"></script>
+    <script src="angular.min.js.télécharger"></script>
+    <script src="angular-ui-router.min.js.télécharger"></script>
+    <script src="ng-file-upload-shim.min.js.télécharger"></script>
+    <script src="ng-file-upload.min.js.télécharger"></script>
 
     <!-- Main Restaurant Module -->
-    <script src="./David Chu&#39;s China Bistro_files/restaurant.module.js.télécharger"></script>
+    <script src="restaurant.module.js.télécharger"></script>
 
     <!-- Common Module -->
-    <script src="./David Chu&#39;s China Bistro_files/common.module.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/loading.component.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/loading.interceptor.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/menu.service.js.télécharger"></script>
+    <script src="common.module.js.télécharger"></script>
+    <script src="loading.component.js.télécharger"></script>
+    <script src="loading.interceptor.js.télécharger"></script>
+    <script src="menu.service.js.télécharger"></script>
 
     <!-- Public Module -->
-    <script src="./David Chu&#39;s China Bistro_files/public.module.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/public.routes.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/menu.controller.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/menu-category.component.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/menu-items.controller.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/menu-item.component.js.télécharger"></script>
+    <script src="public.module.js.télécharger"></script>
+    <script src="public.routes.js.télécharger"></script>
+    <script src="menu.controller.js.télécharger"></script>
+    <script src="menu-category.component.js.télécharger"></script>
+    <script src="menu-items.controller.js.télécharger"></script>
+    <script src="menu-item.component.js.télécharger"></script>
 
     <!-- ADMIN SITE -->
-    <script src="./David Chu&#39;s China Bistro_files/admin.module.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/admin.routes.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/admin-auth.controller.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/login.service.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/current-user.service.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/authredirector.service.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/auth.interceptor.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/login.controller.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/category-list.component.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/category-items.controller.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/menu-item-edit.controller.js.télécharger"></script>
-    <script src="./David Chu&#39;s China Bistro_files/menu-item-admin.component.js.télécharger"></script>
+    <script src="admin.module.js.télécharger"></script>
+    <script src="admin.routes.js.télécharger"></script>
+    <script src="admin-auth.controller.js.télécharger"></script>
+    <script src="login.service.js.télécharger"></script>
+    <script src="current-user.service.js.télécharger"></script>
+    <script src="authredirector.service.js.télécharger"></script>
+    <script src="auth.interceptor.js.télécharger"></script>
+    <script src="login.controller.js.télécharger"></script>
+    <script src="category-list.component.js.télécharger"></script>
+    <script src="category-items.controller.js.télécharger"></script>
+    <script src="menu-item-edit.controller.js.télécharger"></script>
+    <script src="menu-item-admin.component.js.télécharger"></script>
 
 
   
